@@ -15,7 +15,7 @@ for i in $(ls);
         j=$(($j+1))
 	cd $REPO_DIR/$i 
         echo -e "\033[31m[$j] \033[32m -= Git pull from $i =- \033[0m"
-    	echo Git pull from $i >> $LOG
+    	echo "[$j]  Git pull from $i" >> $LOG
 	git pull | tee -a $LOG
 	echo -e "\033[0m" 
     done;
