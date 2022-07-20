@@ -1,5 +1,9 @@
 #!/bin/bash
 #
+# Проверка формата скриптов:
+# run-parts /etc/update-motd.d/ > /dev/null
+#
+#
 # Text Color Variables http://misc.flogisoft.com/bash/tip_colors_and_formatting
 tcLtG="\033[00;37m"    # LIGHT GRAY
 tcDkG="\033[01;30m"    # DARK GRAY
@@ -47,4 +51,3 @@ echo -e $tcLtG " - Swap used %   : $SWAP_USED"
 echo -e $tcLtG " - System uptime : $upDays days $upHours hours $upMins minutes"
 echo -e $tcDkG "====================================================================="
 echo -e $tcRESET ""
-#
